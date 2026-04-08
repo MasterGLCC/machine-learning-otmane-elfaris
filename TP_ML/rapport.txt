@@ -1,0 +1,117 @@
+TP Machine Learning Supervisé
+Régression linéaire simple, multiple et polynomiale
+
+1. Introduction
+
+Dans ce TP, nous avons appliqué trois algorithmes de machine learning supervisé :
+
+* la régression linéaire simple
+* la régression linéaire multiple
+* la régression polynomiale
+
+L'objectif est de comprendre le fonctionnement de ces modèles et de comparer leurs performances sur un dataset réel.
+
+---
+
+2. Dataset utilisé
+
+Le dataset utilisé est le dataset "Diabetes" fourni par la bibliothèque scikit-learn.
+
+Ce dataset contient plusieurs variables explicatives telles que :
+
+* age
+* sex
+* bmi
+* bp
+* s1, s2, s3, etc.
+
+La variable cible est "target", qui représente une mesure liée à la progression de la maladie.
+
+Ce dataset a été choisi car :
+
+* il est fiable et largement utilisé en machine learning
+* il ne nécessite pas de téléchargement externe
+* il est adapté pour les algorithmes de régression
+
+---
+
+3. Régression linéaire simple
+
+Dans cette partie, nous avons utilisé une seule variable explicative : "bmi".
+
+Le modèle cherche à établir une relation linéaire entre bmi et target sous la forme :
+
+y = ax + b
+
+Un graphique 2D a été tracé pour visualiser la relation entre les deux variables ainsi que la droite de régression.
+
+---
+
+4. Régression linéaire multiple
+
+La régression linéaire multiple utilise plusieurs variables explicatives simultanément pour prédire la variable cible.
+
+La formule générale est :
+
+y = a1x1 + a2x2 + a3x3 + ... + b
+
+Contrairement à la régression simple, ce modèle travaille dans un espace multidimensionnel.
+
+---
+
+5. Pourquoi il est difficile de visualiser la régression multiple
+
+La régression multiple ne peut pas être facilement représentée en 2D car elle implique plusieurs variables.
+
+* avec 1 variable → une droite (2D)
+* avec 2 variables → un plan (3D)
+* avec plusieurs variables → un hyperplan (impossible à visualiser directement)
+
+---
+
+6. Solution proposée : visualisation 3D
+
+Pour illustrer la régression multiple, nous avons utilisé seulement deux variables :
+
+* bmi
+* bp
+
+Cela permet de construire un graphique 3D où :
+
+* axe X → bmi
+* axe Y → bp
+* axe Z → target
+
+Un plan de régression est tracé pour représenter le modèle.
+
+Cette visualisation permet de mieux comprendre le principe de la régression multiple, même si elle ne représente pas toutes les variables.
+
+---
+
+7. Régression polynomiale
+
+La régression polynomiale permet de modéliser des relations non linéaires.
+
+Dans ce TP, nous avons utilisé un polynôme de degré 3 appliqué à la variable bmi.
+
+Cela permet d'obtenir une courbe au lieu d'une droite.
+
+---
+
+8. Comparaison des modèles
+
+Les modèles ont été comparés à l'aide du coefficient R².
+
+* la régression linéaire simple donne des résultats limités
+* la régression polynomiale améliore légèrement la modélisation
+* la régression linéaire multiple est la plus performante car elle utilise toutes les variables
+
+---
+
+9. Conclusion
+
+Ce TP nous a permis de comprendre les différences entre les modèles de régression.
+
+La régression linéaire multiple est la plus efficace dans ce cas, car elle exploite l'ensemble des variables disponibles.
+
+La visualisation 3D proposée permet de mieux interpréter ce modèle malgré la complexité des données multidimensionnelles.
